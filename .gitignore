@@ -1,0 +1,7 @@
+src/config.json
+node_modules
+.env
+.vscode
+build
+yarn-error*
+bowbot.db

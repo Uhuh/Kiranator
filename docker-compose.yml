@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  kiranator-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/panku/Kiranator/src
+    container_name: kira-docker
+    command: node build/src/index.js
