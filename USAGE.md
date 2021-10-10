@@ -1,29 +1,3 @@
-<style>
-@media only screen and (max-width: 600px) {
-  .main { display: none; }
-  .mobile { display: block !important; }
-}
-@media only screen and (max-width: 1200px) {
-  .warn-reason {
-    flex-direction: column;
-  }
-  img {
-    padding: 10px 0;
-  }
-}
-.commands {
-  text-align:center;
-}
-table, th, td {
-  font-family: monospace;
-  text-align: left;
-  border: 1px solid black;
-}
-tr td:last-child {
-  font-family: "Karla",BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;;
-}
-</style>
-
 <div class="commands">
 
 # Server Configuration
