@@ -1,11 +1,11 @@
 import { Message, MessageEmbed } from 'discord.js';
 import KiraBot from '../../src/bot';
-import { AVATAR_URL, INVITE_URL, SUPPORT_URL, VOTE_URL } from '../../src/vars';
+import { AVATAR_URL } from '../../src/vars';
 import { missingPerms } from '../../utilities/functions/missingPerm';
 import { COLOR } from '../../utilities/types/global';
 
 export const invite = {
-  desc: 'Get links related to KiraBot like invite/support.',
+  desc: 'Check my latency.',
   name: 'info',
   args: '',
   alias: ['i'],
@@ -18,17 +18,11 @@ export const invite = {
       .setColor(COLOR.AQUA)
       .setDescription(
         `
-Thanks for using KiraBot! If you'd like to support her more use her in more servers, vote for her or even leave feedback in the support server!
+I'm a custom bot designed to help Omori Kira's server!
 
-Server count: ${client.guilds.cache.size} servers.
 Latency is ${
           Date.now() - message.createdTimestamp
-        }ms. API Latency is ${Math.round(client.ws.ping)}ms.
-
-[Click to invite KiraBot!](${INVITE_URL})
-[Click to Vote!](${VOTE_URL})
-[Join the support server!](${SUPPORT_URL})
-`
+        }ms. API Latency is ${Math.round(client.ws.ping)}ms.`
       )
       .setThumbnail(AVATAR_URL);
 

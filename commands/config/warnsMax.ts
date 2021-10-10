@@ -4,7 +4,7 @@ import { GET_GUILD_CONFIG, SET_WARN_LIMIT } from '../../src/database/database';
 export const warnsMax = {
   desc: 'Set the max warns a user can get before getting banned.',
   name: 'maxwarns',
-  args: '<a number in the range [1, 10]>',
+  args: '<a number in the range [1, 30]>',
   alias: ['mw'],
   type: 'config',
   run: async (message: Message, args: string[]) => {
